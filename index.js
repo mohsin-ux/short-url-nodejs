@@ -3,7 +3,8 @@ import path from 'path';
 import { router as urlRoute } from './routes/url.js';
 import { connectMongoDB } from './connection.js';
 import { URL } from './models/urls.js';
-import { router as staticRoute } from './routes/staticRouter.js';
+import { router as staticRoute } from './routes/staticRouter.js';\
+import {router as userRoute} from './routes/user.js'
 
 const app = express();
 const PORT = 8001;
@@ -20,6 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/url', urlRoute);
 app.use('/', staticRoute);
+app.use('/user', userRoute)
 
 app.get('/url/:shortId', async (req, res) => {
   const shortId = req.params.shortId;
