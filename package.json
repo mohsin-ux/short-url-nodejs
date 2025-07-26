@@ -1,0 +1,20 @@
+{
+  "name": "short-url",
+  "version": "1.0.0",
+  "description": "it is the project for creating short url",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "mohsin raza",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.5",
+    "nanoid": "^5.1.5",
+    "nodemon": "^3.1.10",
+    "shortid": "^2.2.17"
+  }
+}
