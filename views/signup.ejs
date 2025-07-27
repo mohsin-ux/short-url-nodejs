@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: palegoldenrod;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      form input {
+        width: 300px;
+        outline: none;
+        background-color: palevioletred;
+        padding: 10px;
+        border: 1px;
+        border-radius: 5px;
+      }
+      form input:focus {
+        border: 2px solid green;
+      }
+      form button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border: 1px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Signup</h1>
+    <form action="/user" method="post">
+      <label for="">Name</label>
+      <input type="text" required placeholder="user name" name="name" />
+      <label for="">Email</label>
+      <input type="email" required placeholder="email" name="email" />
+      <label for="">Password</label>
+      <input type="password" required placeholder="password" name="password" />
+      <button type="submit">Signup</button>
+    </form>
+
+    <script>
+      alert('Form is submitted successfully');
+    </script>
+  </body>
+</html>
